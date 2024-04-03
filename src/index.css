@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* overflow: hidden; */
+  font-family: "Montserrat", sans-serif;
+  padding: 64px 24px 71px 24px;
+  background-color: #f7f7fe;
+  background-image: url(./bg-top.svg), url(./bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right -10rem top -2rem, left 0 bottom 0;
+  min-height: 100vh;
+}

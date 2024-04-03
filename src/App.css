@@ -1,0 +1,43 @@
+.main-container-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: src= "Wave";
+  position: relative;
+  z-index: 1; /* Ensure it's above the background */
+}
+
+.list-container {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.headline {
+  color: #6e728e;
+  font-size: 32px;
+  line-height: 39px;
+}
+.curved {
+  position: absolute; /* Set position absolute for the curved image */
+  bottom: -120px; /* Align to the bottom */
+  left: 50px; /* Align to the left */
+  z-index: -1; /* Put it behind other content */
+}
+
+.wave {
+  position: absolute; /* Set position absolute for the wave image */
+  top: -90px; /* Align to the top */
+  right: 0; /* Align to the right */
+  z-index: -1; /* Put it behind other content */
+}
+
+@media (min-width: 1100px) {
+  .list-container {
+    flex-direction: row;
+    column-gap: 32px;
+  }
+}

@@ -1,0 +1,77 @@
+.btn {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #a2a7f0 0%, #696edd 100%);
+  border-radius: 6px;
+  width: 269px;
+  height: 44px;
+  border: 0;
+  color: white;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 15.85px;
+  letter-spacing: 1.39px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 1px solid #6d72de;
+  color: #6d72de;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-active {
+  margin-top: 20px;
+  background: white;
+  border-radius: 6px;
+  width: 269px;
+  height: 44px;
+  border: 0;
+  color: #6d72de;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 15.85px;
+  letter-spacing: 1.39px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.btn-active:hover {
+  /* background-color: transparent; */
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-active:active {
+  transform: scale(0.98);
+  background-color: rgb(16, 104, 213);
+}
+
+.btn .animation {
+  border-radius: 100%;
+  animation: ripple 1.5s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1),
+      0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1),
+      0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1),
+      0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1),
+      0 0 0 80px rgba(255, 255, 255, 0);
+  }
+}
